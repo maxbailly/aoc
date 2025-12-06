@@ -1,4 +1,4 @@
-const INPUT: &[u8] = include_bytes!("../../../inputs/2015/day1.txt");
+const INPUT: &[u8] = include_bytes!("../../../inputs/2015/day01.txt");
 
 /* ---------- */
 

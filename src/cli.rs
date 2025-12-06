@@ -28,13 +28,15 @@ impl Cli {
 pub(crate) enum Y2015 {
     All,
     Day1,
+    Day2,
 }
 
 impl Y2015 {
     fn run(&self) {
         match self {
-            Y2015::All => self.all(),
-            Y2015::Day1 => crate::years::y2015::day1::resolve(),
+            Self::All => self.all(),
+            Self::Day1 => crate::years::y2015::day1::resolve(),
+            Self::Day2 => crate::years::y2015::day2::resolve(),
         }
     }
 
