@@ -1,9 +1,9 @@
-pub(crate) mod day1;
-pub(crate) mod day2;
+pub(crate) mod day01;
+pub(crate) mod day02;
 
 /* ---------- */
 
 pub(crate) fn resolve_all() {
-    day1::resolve();
-    day2::resolve();
+    day01::resolve();
+    day02::resolve();
 }

@@ -35,8 +35,8 @@ impl Y2015 {
     fn run(&self) {
         match self {
             Self::All => self.all(),
-            Self::Day1 => crate::years::y2015::day1::resolve(),
-            Self::Day2 => crate::years::y2015::day2::resolve(),
+            Self::Day1 => crate::years::y2015::day01::resolve(),
+            Self::Day2 => crate::years::y2015::day02::resolve(),
         }
     }
 
