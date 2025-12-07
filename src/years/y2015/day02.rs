@@ -7,7 +7,7 @@ const INPUT: &str = include_str!("../../../inputs/2015/day02.txt");
 /* ---------- */
 
 pub(crate) fn resolve() {
-    println!("[2015 DAY1]");
+    println!("[2015 DAY2]");
 
     let presents = INPUT
         .lines()
