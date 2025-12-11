@@ -31,6 +31,7 @@ pub(crate) enum Y2015 {
     Day2,
     Day3,
     Day4,
+    Day5,
 }
 
 impl Y2015 {
@@ -41,6 +42,7 @@ impl Y2015 {
             Self::Day2 => crate::years::y2015::day02::resolve(),
             Self::Day3 => crate::years::y2015::day03::resolve(),
             Self::Day4 => crate::years::y2015::day04::resolve(),
+            Self::Day5 => crate::years::y2015::day05::resolve(),
         }
     }
 
