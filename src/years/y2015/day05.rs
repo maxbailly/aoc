@@ -3,7 +3,7 @@ const INPUT: &[u8] = include_bytes!("../../../inputs/2015/day05.txt");
 /* ---------- */
 
 pub(crate) fn resolve() {
-    println!("[2015 DAY4]");
+    println!("[2015 DAY5]");
     println!("Part1 => {}", part1());
     println!("Part2 => {}", part2());
 }
