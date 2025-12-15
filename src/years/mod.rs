@@ -1,1 +1,36 @@
 pub(crate) mod y2015;
+
+/* ---------- */
+
+use clap::Subcommand;
+
+/* ---------- */
+
+#[derive(Debug, Clone, Copy, Subcommand)]
+pub(crate) enum Y2015 {
+    All,
+    Day1,
+    Day2,
+    Day3,
+    Day4,
+    Day5,
+    Day6,
+}
+
+impl Y2015 {
+    pub(crate) fn run(&self) {
+        match self {
+            Self::All => self.all(),
+            Self::Day1 => crate::years::y2015::day01::resolve(),
+            Self::Day2 => crate::years::y2015::day02::resolve(),
+            Self::Day3 => crate::years::y2015::day03::resolve(),
+            Self::Day4 => crate::years::y2015::day04::resolve(),
+            Self::Day5 => crate::years::y2015::day05::resolve(),
+            Self::Day6 => crate::years::y2015::day06::resolve(),
+        }
+    }
+
+    fn all(&self) {
+        crate::years::y2015::resolve_all();
+    }
+}
